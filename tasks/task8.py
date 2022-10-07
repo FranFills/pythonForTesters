@@ -10,5 +10,5 @@ for num in range(nums):
     print("Number", num)
     if num == 2:
         continue
-    if num == 8:
+    if num == 10:
         break
