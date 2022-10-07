@@ -16,3 +16,11 @@ def greet():
     print('Hello World from python')
 
 greet()
+
+def accept(cd):
+    cd('Hello Dear')
+
+hello = lambda : print('Hello World Anonymous')
+hello()
+
+accept(lambda c: print(c))
