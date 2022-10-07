@@ -7,8 +7,10 @@ If the i value is equal to 8 add the break statement
 
 nums = 10
 for num in range(nums):
-    print("Number", num)
+
     if num == 2:
         continue
-    if num == 10:
+    if num == 8:
         break
+
+    print("Number", num)

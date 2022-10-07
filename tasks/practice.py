@@ -11,3 +11,8 @@ number = 13
 while 0 < number: #< 12:
     print('number: ', number)
     number -= 1
+
+def greet():
+    print('Hello World from python')
+
+greet()
