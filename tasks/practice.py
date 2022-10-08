@@ -59,3 +59,17 @@ sNumbers()
 sNumbers(0, 87, 32)
 sNumbers(7, 21, 65)
 sNumbers(2, 5, 7, 9, 'Hello')
+
+# Global variable
+name = 'Testify'
+
+def language():
+    curr_lang = 'Python' # Local variable
+    print('Name', name, 'Language', curr_lang)
+
+def framework():
+    curr_framework = 'Selenium' # Local variable
+    print('Name', name, 'Framework', curr_framework)
+
+language()
+framework()
