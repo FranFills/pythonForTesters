@@ -1,4 +1,4 @@
-name: Merge CI
+name: Merge CI/CD
 on: [ pull_request ]
 jobs:
   Test:
