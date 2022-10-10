@@ -89,3 +89,57 @@ def reduce_number_recursion(num):
 reduce_number_loop(6)
 print()
 reduce_number_recursion(7)
+
+name = '  testify operations: switch to software testing  '
+
+# length: print the length of a string
+print(len(name))
+
+# upper: convert a string to uppercase
+print(name.upper())
+
+# lower: convert a string to lowercase
+print(name.lower())
+
+# capitalize: convert first char to uppercase
+print(name.capitalize())
+
+#count: count the occurence of a value in a string
+print(name.count(' '))
+
+# find: index of position of a value, if value is not in the string, it returns -1
+print(name.find('for'))
+
+# index: index of position of a value, if value is not in the string, it throws an exception
+print(name.index('to'))
+
+# strip: remove excess whitespace at the beginning and end of a string
+print(name)
+print(name.strip())
+
+# rstrip: remove excess whitespace at the end of a string
+print(name)
+print(name.rstrip())
+
+# lstrip: remove excess whitespace at the beginning of a string
+print(name)
+print(name.lstrip())
+
+# split: split a string to an array using the specified value
+print(name.split(' '))
+
+# format: format the specified value of a string
+# named format
+unformatted = 'My name is {name}, I am a {occupation}'
+formatted = unformatted.format(name='Fisayo', occupation='Tester')
+print(formatted)
+
+# indexed format
+unformatted = 'My name is {0}, I am a {1}'
+formatted1 = unformatted.format('Fisayo', 'Automation Engineer')
+print(formatted1)
+
+# unindexed format
+unformatted = 'My name is {}, I am a {}'
+formatted2 = unformatted.format('Fisayo', 'Engineer')
+print(formatted2)
