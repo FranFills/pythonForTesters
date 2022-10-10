@@ -73,3 +73,19 @@ def framework():
 
 language()
 framework()
+
+def reduce_number_loop(num):
+    while num>=0:
+        print(num)
+        num -=1
+
+def reduce_number_recursion(num):
+    print(num)
+    #num -=1
+    if num == 0:
+        return
+    reduce_number_recursion(num-1)
+
+reduce_number_loop(6)
+print()
+reduce_number_recursion(7)

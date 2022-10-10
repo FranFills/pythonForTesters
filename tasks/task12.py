@@ -6,7 +6,7 @@ Print out the variable name into the console
 Invoke the function
 """
 
-Language = 'Python'
+language = 'Python'
 
 def function():
     language = 'Java'
