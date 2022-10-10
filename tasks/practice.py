@@ -202,3 +202,46 @@ print(languages)
 # extend: add contents of a specified list to current list
 languages.extend([12, 'football', 'sql', 'typescript'])
 print(languages)
+biodata = {
+    'name': 'Fisayo',
+    'age': 21,
+    'marital_status': 'single',
+    'occupation': 'Test Automation Engineer'
+}
+
+print(biodata)
+
+
+# get: fetch a value using specified key
+print(biodata.get('name'))
+
+# items: return list of key value pairs as a tuple
+print(biodata.items())
+
+# keys: return keys as a list
+print(biodata.keys())
+
+# value: return vlaues as a list
+print(biodata.values())
+
+# pop: remove key:value pair from the dictionary
+popDict = biodata.pop('name')
+print(biodata)
+
+# update: add more key:value pair to the dictionary
+updateDict = biodata.update({'complexion': 'Dark', 'Bestie': 'Diane'})
+print(biodata)
+
+# popItem: remove the last key:value pair from the dictionary
+popItemDict = biodata.popitem()
+print(biodata)
+
+# copy: returns a copy of the dictionary
+biodata_copy = biodata.copy()
+print(biodata_copy)
+
+# clear: removes all the elements of a dictionary
+biodata.clear()
+print(biodata)
+print(biodata_copy)
+
