@@ -143,3 +143,62 @@ print(formatted1)
 unformatted = 'My name is {}, I am a {}'
 formatted2 = unformatted.format('Fisayo', 'Engineer')
 print(formatted2)
+
+languages = ['C', 'python', 'java', 'C#', 'C++']
+print(languages)
+
+# append: add new item to the list
+languages.append('Javascript')
+print(languages)
+
+# insert: add new item to specified position
+languages.insert(0, 'C')
+languages.insert(2, 'PHP')
+print(languages)
+
+# pop: remove item to specified position(if position is noty specified, last item in the list is removed)
+languages.pop(0)
+languages.pop()
+print(languages)
+
+# remove: remove item by value
+languages.remove('PHP')
+#languages.insert(2, 'PHP')
+print(languages)
+
+# count: return the number of occurrence of an item in a list
+languages.count('C')
+#languages.insert(2, 'PHP')
+print(languages.count('C++'))
+
+# len: count the number of items in a list
+length = len(languages)
+print(length)
+
+# clear: delete all items in a list
+clear = languages.clear()
+length = len(languages)
+print(languages, length)
+
+# copy: return a copy of the list
+languages = ['C', 'python', 'java', 'C#', 'ruby', 'javascript']
+print(languages)
+print(languages.copy())
+
+# reverse: return a copy of the list in reverse order
+print(languages)
+languages.reverse()
+print(languages)
+
+# sort: sort the items in a list by ascending or descending order
+# sort ascending
+languages.sort()
+print(languages)
+
+# sort descending
+languages.sort(reverse=True)
+print(languages)
+
+# extend: add contents of a specified list to current list
+languages.extend([12, 'football', 'sql', 'typescript'])
+print(languages)
