@@ -260,3 +260,15 @@ Lanre = Human()
 
 print(Lanre.name, Lanre.group, Lanre.get_name())
 
+class Human:
+
+    leg_count = 4
+    can_walk = True
+
+    def __init__(self, name):
+        self.name = name
+
+fisayo = Human('Fisayo')
+print(fisayo.can_walk)
+print(fisayo.leg_count)
+print(fisayo.name)

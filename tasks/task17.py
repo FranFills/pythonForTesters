@@ -10,6 +10,3 @@ class Human:
     group = 'Mammal'
     blood = 'warm blooded'
 
-    def get_name(self):
-        return self.name + ':' + self.group + ':' + self.blood
-
