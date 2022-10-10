@@ -245,3 +245,18 @@ biodata.clear()
 print(biodata)
 print(biodata_copy)
 
+# class
+class Human:
+
+    name = 'homo sapiens'
+    group = 'Mammal'
+    blood = 'warm blooded'
+
+    def get_name(self):
+        return self.name + ':' + self.group + ':' + self.blood
+
+# objects
+Lanre = Human()
+
+print(Lanre.name, Lanre.group, Lanre.get_name())
+
