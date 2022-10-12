@@ -359,3 +359,30 @@ plane1.print_vehicle_info()
 
 animal = Animal()
 print('\nAnimal:', animal.name, animal.group)
+
+
+class Vehicle():
+
+    def drive_direction(self):
+        print('\nVehicle: ', 'Move forward')
+
+
+class Plane(Vehicle):
+
+    def drive_direction(self):
+        print('\nPlane: ','Move upward')
+
+
+class Submarine(Vehicle):
+
+    def drive_direction(self):
+        print('\nSubmarine: ', 'Move downward')
+
+vehicle = Vehicle()
+vehicle.drive_direction()
+
+plane1 = Plane()
+plane1.drive_direction()
+
+sub_marine = Submarine()
+sub_marine.drive_direction()
