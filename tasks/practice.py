@@ -323,5 +323,39 @@ print(plane.get_make_tire_count())
 
 plane.check_type()
 
+class Vehicle:
+
+    model = 'Unknown'
+    make = 'Unknown'
+    production_year = '1990'
+
+    def print_vehicle_info(self):
+        print('\nVehicle: ', self.make, self.model, self.production_year)
+
+
+# child class
+class Car(Vehicle):
+
+    wheel_count = 4
+
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+
+
+class Plane(Vehicle):
+
+    model = 'Aeroplane'
+    make = 'Boeing'
+
+vehicle = Vehicle()
+vehicle.print_vehicle_info()
+
+car1 = Car('Toyota', 'Camry')
+car1.print_vehicle_info()
+
+plane1 = Plane()
+plane1.print_vehicle_info()
+
 animal = Animal()
 print('\nAnimal:', animal.name, animal.group)
