@@ -386,3 +386,21 @@ plane1.drive_direction()
 
 sub_marine = Submarine()
 sub_marine.drive_direction()
+
+class User:
+
+    __first_name = 'Testify'
+    __last_name = 'QA'
+    __attendance = 2
+
+    def get_name(self):
+        return 'User: ' + self.__first_name
+
+    def get_attendance(self):
+        value = self.__attendance * 12
+        return 'Attendance: ' + str(value)
+
+user = User()
+print(user.get_name())
+
+print(user.get_attendance())
