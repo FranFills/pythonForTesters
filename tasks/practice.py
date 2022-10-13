@@ -1,3 +1,4 @@
+import abc
 
 fruits = ['Apple', 'Banana', 'Cucumber']
 for fruit in fruits:
@@ -422,3 +423,51 @@ class LoginSession:
 session = LoginSession()
 print(session.get_email())
 print(session.get_password())
+
+# abstract class and methods
+class IWebElement(metaclass=abc.ABCMeta):
+
+    @abc.abstractmethod
+    def get_name(self):
+        pass
+
+    @abc.abstractmethod
+    def set_style(self, style):
+        pass
+
+class DivElement (IWebElement):
+
+    def get_name(self):
+        return 'Div'
+
+    def set_style(self, style):
+       print('Div Style: ', style)
+
+
+class SpanElement(IWebElement):
+
+    def get_name(self):
+        return 'Span'
+
+    def set_style(self, style):
+        print('Span Style: ', style)
+
+class ButtonElement(IWebElement):
+
+    def get_name(self):
+        return 'Button'
+
+    def set_style(self, style):
+        print('Button Style: ', style)
+
+div_element = DivElement()
+print(div_element.get_name())
+div_element.set_style('Width = 100px; Height = 100px')
+
+span_element = SpanElement()
+print(span_element.get_name())
+span_element.set_style('Border: 10px solid blue')
+
+button_element = ButtonElement()
+print(button_element.get_name())
+button_element.set_style('Font size = 15px; font weight = bold')
