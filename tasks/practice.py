@@ -323,6 +323,7 @@ print(plane.get_make_tire_count())
 
 plane.check_type()
 
+# Inheritance
 class Vehicle:
 
     model = 'Unknown'
@@ -342,7 +343,7 @@ class Car(Vehicle):
         self.make = make
         self.model = model
 
-
+# Polymorphism
 class Plane(Vehicle):
 
     model = 'Aeroplane'
@@ -370,7 +371,7 @@ class Vehicle():
 class Plane(Vehicle):
 
     def drive_direction(self):
-        print('\nPlane: ','Move upward')
+        print('\nPlane: ', 'Move upward')
 
 
 class Submarine(Vehicle):
@@ -387,6 +388,7 @@ plane1.drive_direction()
 sub_marine = Submarine()
 sub_marine.drive_direction()
 
+#data encapsulation
 class User:
 
     __first_name = 'Testify'
@@ -404,3 +406,19 @@ user = User()
 print(user.get_name())
 
 print(user.get_attendance())
+
+# Data Abstraction
+class LoginSession:
+
+    __email = 'user@test.com'
+    __password = 'password'
+
+    def get_email(self):
+        return self.__email
+
+    def get_password(self):
+        return '*********'
+
+session = LoginSession()
+print(session.get_email())
+print(session.get_password())
