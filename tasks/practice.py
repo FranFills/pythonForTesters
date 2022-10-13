@@ -471,3 +471,23 @@ span_element.set_style('Border: 10px solid blue')
 button_element = ButtonElement()
 print(button_element.get_name())
 button_element.set_style('Font size = 15px; font weight = bold')
+
+# static methods (methods bound to class rather than class objects)
+class Calculator:
+
+    def add(num1, num2):
+        return num1 + num2
+
+    @staticmethod
+    def multiply(num1, num2):
+        return num1 * num2
+
+    @staticmethod
+    def divide(num1, num2):
+        return num1 / num2
+
+Calculator.add = staticmethod(Calculator.add)
+
+print('1 + 1 =', Calculator.add(1,1))
+print('2 * 2 =', Calculator.multiply(2,2))
+print('100 / 2 =', Calculator.divide(100,2))
