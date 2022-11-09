@@ -10,6 +10,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver import ActionChains
 from selenium.webdriver import Keys
 
 
@@ -20,14 +21,17 @@ def sendKeystoElements(element, *keys):
 def main():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
     driver.get('https://web.facebook.com/')
-    #form = driver.find_element(By.XPATH, '//*[@id="u_0_2_Uw"]')
+
     emailField = driver.find_element(By.XPATH, '//*[@id="email"]')
     emailField.click()
     sendKeystoElements(emailField, 'fisayo@yahoo.com')
-    sendKeystoElements(driver.find_element(By.XPATH, '//*[@id="passContainer"]'), 'fisayo@2')
-    time.sleep(2)
+
+    passwordButton = driver.find_element(By.XPATH, "//html[@id='facebook']//input[@id='pass']")
+    #driver.implicitly_wait(5)
+    #ActionChains(driver).move_to_element(passwordButton).click(passwordButton).perform()
+    sendKeystoElements(passwordButton, 'fisayo@2')
+
     driver.find_element(By.NAME, 'login').click()
-    time.sleep(2)
 
 
 if __name__ == '__main__':

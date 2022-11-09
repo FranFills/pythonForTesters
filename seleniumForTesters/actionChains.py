@@ -36,11 +36,13 @@ def highlightElement2(action, element, limit=15):
 
 def main():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-    driver.get('https://opportunitiescorners.info/erasmus-mundus-scholarship-2023/') #("https://www.testifyltd.com/contact")
+    driver.get('https://www.testifyltd.com/contact')
     action = ActionChains(driver)
     #scrollToElement(action, driver.find_element(By.XPATH, '//*[@id="post-13912"]/div[2]/p[1]/strong[5]/a'))
     #scrollByOffset(action, 100)
-    rightClickContext(action, driver.find_element(By.XPATH, '//*[@id="post-13912"]/div[2]/p[1]/strong[5]/a'))
+    #rightClickContext(action, driver.find_element(By.NAME, 'firstname'))
+    #highlightElement1(action, driver.find_element(By.TAG_NAME, 'h2'), 50)
+    highlightElement2(action, driver.find_element(By.TAG_NAME, 'h2'), 50)
     time.sleep(4)
 
 
