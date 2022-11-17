@@ -8,5 +8,5 @@ jobs:
         os: [ ubuntu-latest, windows-latest, macos-latest ]
     steps:
       - uses: actions/checkout@v2
-      - run: python task1.py || true
+      - run: python seleniumChallenge1.py || true
 

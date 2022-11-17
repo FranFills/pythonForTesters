@@ -14,7 +14,7 @@ The web elements in each of your object models should not be more than 5."""
 def main():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
     test_automation_simplified = TestAutomationSimplified(driver)
-    test_automation_simplified.coachGuidance.is_displayed()
+    test_automation_simplified.coachGuidance._is_displayed()
     test_automation_simplified.courses.click()
     test_automation_simplified.enrolButton.click()
     test_automation_simplified.successStories.click()
