@@ -14,8 +14,8 @@ class SearchPython:
 
     def __init__(self, driver):
         driver.get('https://www.google.com/')
-        self.title = driver.find_element(By.CLASS_NAME, 'gLFyf')
-        self.enterKey = driver.find_element(By.CLASS_NAME, 'eIPGRd')
+        self.title = driver.find_element(By.TAG_NAME, 'input') # 'gLFyf'
+        self.enterKey = driver.find_element(By.XPATH, '/html/body/div[1]/div[3]/form/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div/ul/li[1]/div')
 
 
         def _find(self, locator: tuple) -> WebElement:

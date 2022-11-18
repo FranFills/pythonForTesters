@@ -29,8 +29,7 @@ def main():
     search_python = SearchPython(driver)
 
     send_keys_to_elements(search_python.title, 'python')
-    action = ActionChains(driver)
-    action.click(search_python).perform()
+    search_python.enterKey.click()
     #search_python.enterKey.click()
     time.sleep(4)
 
