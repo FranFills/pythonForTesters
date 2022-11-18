@@ -1,9 +1,8 @@
 from selenium.common import NoSuchElementException
-from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.remote.webelement import WebElement
-from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
+from selenium.webdriver.support.wait import WebDriverWait
 
 
 class BasePage:
@@ -41,3 +40,4 @@ class BasePage:
     def _get_text(self, locator: tuple, time: int = 5) -> str:
         self._wait_until_element_is_visible(locator, time)
         return self._find(locator).text
+

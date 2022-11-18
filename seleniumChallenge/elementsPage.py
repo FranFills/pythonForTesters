@@ -26,13 +26,19 @@ class facebookLoginPage(BasePage):
         super()._click(self.__submitButton)
 
 
+class googleChallenge(BasePage):
+    __url = 'https://www.google.com/'
+    __search_box = (By.CLASS_NAME, 'gLFyf')
+    __enter_key = ''
+    __wikipedia_text = ''
+
+    def __init__(self, driver: WebDriver):
+        super().__init__(driver)
+
+
+
+
 """
-class googleChallenge:
-
-    def __init__(self, driver):
-        driver.get('https://www.google.com/')
-
-
 class weatherChallenge:
 
     def __init__(self, driver):
