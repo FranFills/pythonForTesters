@@ -6,6 +6,7 @@ get the first two comments, and print them in the terminal.
 import time
 from selenium import webdriver
 from selenium.webdriver import ActionChains
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.wait import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
@@ -17,7 +18,7 @@ def scroll_by_offset(action, delta_y):
 
 
 def main():
-    driver = webdriver.Chrome(executable_path=(ChromeDriverManager().install()))
+    driver = webdriver.Chrome(service=(Service(ChromeDriverManager().install())))
     driver.get('https://www.youtube.com/watch?v=kqtD5dpn9C8')
     action = ActionChains(driver)
     driver.maximize_window()

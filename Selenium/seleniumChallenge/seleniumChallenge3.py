@@ -7,6 +7,7 @@ Then print out the temperature for Morning, Afternoon, Evening,and Overnight
 import time
 
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 
@@ -16,7 +17,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 
 def main():
-    driver = webdriver.Chrome(executable_path=(ChromeDriverManager().install()))
+    driver = webdriver.Chrome(service=(Service(ChromeDriverManager().install())))
     driver.get('https://weather.com/')
     driver.maximize_window()
     time.sleep(3)
