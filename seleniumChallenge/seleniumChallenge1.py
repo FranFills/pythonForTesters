@@ -23,5 +23,6 @@ class main:
         # Perform verifications
         assert logged_in_page.expected_url == logged_in_page.current_url, 'Actual Url is not same as expected'
 
+
 if __name__ == '__main__':
     main()

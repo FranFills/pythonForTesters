@@ -10,12 +10,13 @@ class AboutUsPage:
         self.title = driver.find_element(By.TAG_NAME, 'h1')
 
 
-class SearchPython:
+"""class SearchPython:
 
     def __init__(self, driver):
         driver.get('https://www.google.com/')
         self.title = driver.find_element(By.TAG_NAME, 'input') # 'gLFyf'
-        self.enterKey = driver.find_element(By.XPATH, '/html/body/div[1]/div[3]/form/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div/ul/li[1]/div')
+        self.enterKey = driver.find_element(By.XPATH, '/html/body/div[1]/div[3]/form/div[1]/div[1]/div[2]/div[2]/div[2]
+        /div[1]/div/ul/li[1]/div')
 
 
         def _find(self, locator: tuple) -> WebElement:
@@ -23,5 +24,4 @@ class SearchPython:
 
         def _type(self, locator: tuple, text: str, time: int = 5):
             self._wait_until_element_is_visible(locator, time)
-            self._find(locator).send_keys(text)
-
+            self._find(locator).send_keys(text)"""
