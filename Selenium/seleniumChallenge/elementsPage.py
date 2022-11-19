@@ -1,6 +1,6 @@
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.by import By
-from seleniumChallenge.basePage import BasePage
+from Selenium.seleniumChallenge.basePage import BasePage
 
 
 def send_keys(element, *keys):

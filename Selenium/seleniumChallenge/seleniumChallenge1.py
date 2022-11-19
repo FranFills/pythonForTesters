@@ -1,8 +1,8 @@
 """Using the Chrome browser navigate to https://www.facebook.com/ fill in the email/phone and
 password text box then click the Login Button"""
 
-from seleniumChallenge.elementsPage import facebookLoginPage
-from seleniumChallenge.loggedInSuccessfully import logInToFacebook
+from Selenium.seleniumChallenge.elementsPage import facebookLoginPage
+from Selenium.seleniumChallenge.loggedInSuccessfully import logInToFacebook
 
 
 class main:

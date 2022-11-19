@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
-from seleniumChallenge.basePage import BasePage
+from Selenium.seleniumChallenge.basePage import BasePage
 
 
 class logInToFacebook(BasePage):
