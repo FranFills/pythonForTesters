@@ -14,7 +14,9 @@ def main():
     driver.get('https://www.bbc.com/')
     driver.maximize_window()
 
-    news1 = driver.find_element(By.XPATH, '//*[@id="page"]/section[3]/div/ul/li[1]/div/div[2]/h3/a')
+    news_headline = driver.find_element(By.CLASS_NAME, 'media__link')
+
+    """news1 = driver.find_element(By.XPATH, '//*[@id="page"]/section[3]/div/ul/li[1]/div/div[2]/h3/a')
     print('First news item is', news1.text)
 
     news2 = driver.find_element(By.XPATH, '//*[@id="page"]/section[3]/div/ul/li[2]/div/a')
@@ -47,7 +49,13 @@ def main():
 
     news10 = driver.find_element(By.XPATH, '//*[@id="page"]/section[4]/div/div/div[2]/div/section[2]/div/ul/li[2]/div/'
                                  'div[2]/h3/a')
-    print('Tenth news item is', news10.text)
+    print('Tenth news item is', news10.text)"""
+
+
+    index = 0
+    while index < 10:
+        print(news_headline(index).text)
+        index += 1
 
     time.sleep(3)
 

@@ -24,5 +24,11 @@ class main:
         assert logged_in_page.expected_url == logged_in_page.current_url, 'Actual Url is not same as expected'
 
 
+""" '/input[@data-testid="searchInput"]'
+'//form[@data-testid="searchInput"]'
+'//input[@data-testid="royal_login_form"]'
+'//form[@data-testid="royal_login_form"]'
+'Find by attribute Rule: //tagname[@attribute_name="attribute_value"]'"""
+
 if __name__ == '__main__':
     main()
